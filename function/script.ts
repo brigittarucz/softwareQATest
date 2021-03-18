@@ -1,3 +1,9 @@
+/**
+ * Return the product of 3 numbers
+ * @param {Number} a The first number
+ * @param {Number} b The second number
+ * @param {Number} c The third number
+*/
 export const returnProduct = (a: number, b: number, c: number):number|boolean => {
     const arr: number[] = [a,b,c];
     // Type is inferred when number is assigned so using number here is redundant
