@@ -29,3 +29,4 @@ console.log(returnProduct((1+2), 2, 3));
 // 1. Wrong operand (: instead of *)
 // 2. Wrong operand (< instead of >)
 // 3. Wrong operand (% instead of /)
+// 4. Input number has more than 1 digit
