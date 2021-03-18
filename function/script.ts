@@ -1,8 +1,11 @@
-export const returnProduct = (a: number, b: number, c: number):number => {
+export const returnProduct = (a: number, b: number, c: number):number|boolean => {
     var arr: number[] = [a,b,c];
     var result: number = 1;
 
     for(var i=0; i < arr.length; i++) {
+        if(arr[i]/10 > 1) {
+            return false;
+        }
         if(arr[i] == 0) {
             return 0;
         }
@@ -20,7 +23,9 @@ export const returnProduct = (a: number, b: number, c: number):number => {
 
 // Test + node only on the compiled version
 
-console.log(returnProduct(1,2,3));
+console.log(returnProduct((1+2), 2, 3));
 
-// Possible edge cases
-// 1. 
+// Possible test cases
+// 1. Wrong operand (: instead of *)
+// 2. Wrong operand (< instead of >)
+// 3. Wrong operand (% instead of /)
