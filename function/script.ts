@@ -1,8 +1,9 @@
 export const returnProduct = (a: number, b: number, c: number):number|boolean => {
-    var arr: number[] = [a,b,c];
-    var result: number = 1;
+    const arr: number[] = [a,b,c];
+    // Type is inferred when number is assigned so using number here is redundant
+    let result = 1;
 
-    for(var i=0; i < arr.length; i++) {
+    for(let i=0; i < arr.length; i++) {
         if(arr[i]/10 > 1) {
             return false;
         }
@@ -30,3 +31,5 @@ console.log(returnProduct((1+2), 2, 3));
 // 2. Wrong operand (< instead of >)
 // 3. Wrong operand (% instead of /)
 // 4. Input number has more than 1 digit
+
+// 3:9 line 3 space 9

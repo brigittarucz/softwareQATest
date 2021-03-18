@@ -36,3 +36,7 @@ describe("Product Numbers", () => {
         expect(product1).to.deep.equal(10);
     })
 })
+
+// npm install --save typescript
+// eslint --init
+// eslit yourfile.ts
