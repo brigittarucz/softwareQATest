@@ -8,3 +8,5 @@
     "forceConsistentCasingInFileNames": true        /* Disallow inconsistently-cased references to the same file. */
   }
 }
+
+// Watch with tsc -w
