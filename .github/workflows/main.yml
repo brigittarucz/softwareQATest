@@ -1,0 +1,16 @@
+name: CI
+
+on: push
+
+jobs:
+  build:
+    # on is a trigger
+    runs-on: ubuntu-latest
+
+    # commands to run
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run a one-line script
+        # gets run in the shell
+        run: echo "Hello, world!"
