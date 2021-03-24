@@ -39,4 +39,6 @@ describe("Product Numbers", () => {
 
 // npm install --save typescript
 // eslint --init
-// eslit yourfile.ts
+// eslint yourfile.ts
+// node compiled/script.js
+// npm test

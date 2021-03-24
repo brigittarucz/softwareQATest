@@ -7,6 +7,8 @@
     "test": "test"
   },
   "scripts": {
+    "lint": "eslint function/script.ts",
+    "compile": "node compiled/script.js",
     "test": "mocha --reporter spec"
   },
   "author": "",
